@@ -8,9 +8,11 @@ import { Recipe } from './recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  racipeLis: Recipe[] = [
+  racipeList: Recipe[] = [
     // tslint:disable-next-line:max-line-length
-    new Recipe('A new Recipe', 'Its a simple description', 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/05/american-style-pancakes.jpg?itok=_tikdZhR')
+    new Recipe('A new Recipe', 'Its a simple description', 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/05/american-style-pancakes.jpg?itok=_tikdZhR'),
+    // tslint:disable-next-line:max-line-length
+    new Recipe('A new Recipe 1 ', 'Its a simple description', 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/05/american-style-pancakes.jpg?itok=_tikdZhR')
   ];
 
   constructor() { }
