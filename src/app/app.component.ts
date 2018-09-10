@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'onlineShopping';
+  activePage = 'recipes';
+
+  changeCurrentPage(activePage:string) {
+    console.log('activePage : ', activePage);
+    this.activePage = activePage;
+  }
+
 }
