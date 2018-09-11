@@ -7,10 +7,11 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li>
-<a href="#" (click)="pageChangeEvent('recipes')">Recipes</a>
+          <a href="#" (click)="pageChangeEvent('recipes')" [ngClass]="{'active': activePage == 'recipes'}">Recipes</a>
         </li>
         <li>
-<a href="#" (click)="pageChangeEvent('shoppingList')">Shopping List</a>
+          <a href="#" (click)="pageChangeEvent('shoppingList')" [ngClass]="{'active': activePage == 'shoppingList'}">Shopping
+            List</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -31,5 +32,3 @@
     </div>
   </div>
 </nav>
-
-
