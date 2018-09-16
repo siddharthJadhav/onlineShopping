@@ -11,6 +11,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { BasicHeighlight } from './directive/basic-heighlight/basic-heightlight.directive';
 import { BetterHeightlightDirective } from './directive/better-heighlight/better-heightlight.directive';
+import { UnlessDirective } from './directive/unless/unless.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BetterHeightlightDirective } from './directive/better-heighlight/better
     ShoppingListComponent,
     ShoppingEditComponent,
     BasicHeighlight,
-    BetterHeightlightDirective
+    BetterHeightlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule
