@@ -15,8 +15,8 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" role="button">Manage
+        <li class="dropdown" appDropdown>
+<a href="#" class="dropdown-toggle" role="button" (click)="showButton = !showButton">Manage
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
@@ -32,3 +32,8 @@
     </div>
   </div>
 </nav>
+<!-- <p appBasicHeighlight>I am sid</p> -->
+<!-- <p appBetterHeightlight defaultColor="blue" heighLightColor="red">I am sidhu</p> -->
+
+<!-- <p *appUnless="showUnlessDirective">Show unless directive</p>
+<p *appUnless="!showUnlessDirective">hide unless directive</p> -->

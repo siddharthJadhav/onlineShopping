@@ -7,8 +7,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  // tslint:disable-next-line:no-output-rename
   @Output('changeCurrentPage') pageChange = new EventEmitter<string>();
   activePage: string;
+  showUnlessDirective = true;
 
   constructor() { }
 
