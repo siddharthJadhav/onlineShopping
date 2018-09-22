@@ -18,4 +18,15 @@ export class ShoppingListService {
     this.addNewIngredient.emit(this.ingredients.slice());
   }
 
+  /**
+   *Add ingredients list to ingriendent array
+   *
+   * @param {Ingredient[]} ingredients ingrendent list array
+   * @memberof ShoppingListService
+   */
+  addIngredients(ingredients: Ingredient[]) {
+    this.ingredients.push(...ingredients);
+    this.addNewIngredient.emit(this.ingredients.slice());
+  }
+
 }
