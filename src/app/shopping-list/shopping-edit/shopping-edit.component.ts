@@ -1,5 +1,6 @@
 import { ShoppingListService } from './../shopping-list.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Ingredient } from '../../shared/ingredient.model';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -22,7 +23,8 @@ export class ShoppingEditComponent implements OnInit {
     console.log('name : ', this.name.nativeElement.value, ' amount : ', this.amount.nativeElement.value);
     if (name && amount) {
       console.log('valid input');
-      this.shoppingListService.addIngredient(name, amount);
+      const ingredient = new Ingredient(name, amount);
+      this.shoppingListService.addIngredient(ingredient);
     }
   }
 
